@@ -6,13 +6,13 @@ z=["• •"]
 def user_input():
     a=rd.randint(1,6)
     print("Roll The Dice .")
-    x=input("Enter k to Roll the Dice . ?\n")
-    if x.lower() == "k":
+    x=input("Enter x to roll the dice... ?\n")
+    if x.lower() == "x":
         #print(a)
         if a == 1:
             print(f"Your Roll is {a}")
             roll_1()
-            i=input("Want to Roll Again? Y/N\n")
+            i=input("Want to roll again...? Y/N\n")
             if i.lower() == "y":
                 user_input()
             elif i.lower()=="n":
@@ -94,21 +94,21 @@ def user_input():
         user_input()
 
 def roll_3():
-    for i in k:
-        if k.index(i) == 2:
+    for i in x:
+        if x.index(i) == 2:
             #Three
             print(f"{i}")
 
 def roll_1():
-    for i in k:
-        if k.index(i) == 0:
+    for i in x:
+        if x.index(i) == 0:
             #One
             print(f"{i}")
         break
 
 def roll_2():
-    for i in k:
-        if k.index(i) == 1:
+    for i in x:
+        if x.index(i) == 1:
             #Two
             print(f"{i}")
 
@@ -130,8 +130,8 @@ def roll_5():
             print(z)
 
 def roll_6():
-    for i in k:
-        if k.index(i) == 2:
+    for i in x:
+        if x.index(i) == 2:
             #Six
             print(f"{i}")
             print(i)
